@@ -1,0 +1,42 @@
+body {
+    background-image:url("/static/images/iem.jpg")!important ;
+    background-size: 100% 100% !important;
+    background-repeat: no-repeat !important;
+    margin-top: 10px;
+}
+
+.headerJuego{
+    background: #03001e;  
+    background: -webkit-linear-gradient(to left, #fdeff9, #ec38bc, #7303c0, #03001e);  
+    background: linear-gradient(to left, #fdeff9, #ec38bc, #7303c0, #03001e); 
+    height: 100px;
+    color: rgb(0, 0, 0);
+}
+
+.logoTeacher{
+    background-image:url("/static/images/teacher.png")!important ;
+    background-size: contain!important;
+    background-repeat: no-repeat !important;
+    padding: 10px; margin-top: -3px ; left: 3;
+}
+
+.preguntaJuego{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #abbaab;  
+    background: -webkit-linear-gradient(to left, #ffffff, #abbaab); 
+    background: linear-gradient(to left, #ffffff, #abbaab); 
+    border-radius: 100px;
+}    
+
+.footerJuego{
+    background: #03001e; 
+    background: -webkit-linear-gradient(to left, #03001e,  #7303c0, #ec38bc,#fdeff9); 
+    background: linear-gradient(to left, #03001e,  #7303c0, #ec38bc,#fdeff9); 
+    margin-top: 16px;
+}
+
+.colorWhite{
+    color:white
+}

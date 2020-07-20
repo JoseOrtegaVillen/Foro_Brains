@@ -1,0 +1,29 @@
+
+{% include "header.html" %}
+
+<link href="{{url_for('static', filename = 'css/bootstrap.min.css')}}" rel="stylesheet">
+<link href="{{url_for('static', filename = 'css/game.css')}}" rel="stylesheet">
+
+{% block body %}
+
+                {% for row in preguntas %}
+
+                  <div class="well well-sm preguntaJuego">  <h1 class="text-center"> <strong> {{row.1}}</strong> </h1> </div>
+                  <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+                  <div class="text-center">  
+                    <button type="button" class="btn btn-secondary" onclick="location.href='/'">{{row.3}}</button> 
+                    <button type="button" class="btn btn-success" onclick="location.href='/'">{{row.4}}</button> 
+                    <button type="button" class="btn btn-danger" onclick="location.href='/'">{{row.5}}</button> 
+                    <button type="button" class="btn btn-primary" onclick="location.href='/hilo'">{{row.2}}</button> 
+                    <button type="button" class="btn btn-warning" onclick="location.href='/'">{{row.6}}</button> 
+                    <button type="button" class="btn btn-info" onclick="location.href='/'">{{row.7}}</button> 
+                  </div>
+                  <br>  
+                {% endfor  %}
+
+  {% include "footer.html" %}
+ 
+{% endblock %}
+
+<script type="text/javascript" src="{{url_for('static', filename='js/jquery-3.2.1.min.js') }}"></script>
+<script type="text/javascript" src="{{url_for('static', filename = 'js/bootstrap.min.js')}}"></script>
